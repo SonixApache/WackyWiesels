@@ -1,0 +1,40 @@
+
+class Header {
+    gameType = Sandbox;
+    minPlayers = 1;
+    maxPlayers = 14;
+};
+
+class Mission {
+    #include "mission.sqm"
+};
+
+disabledAI = 1;
+joinUnassigned = 0;
+respawn = 1;
+enableDebugConsole = 1;
+
+#include "mission_info.sqf"
+
+class CfgDebriefing
+{
+    class End1
+    {
+        title = $STR_A3_MP_ZR_8_Karts01_debrief_title;
+        subtitle = "Race framework by DnA and Nife!";
+        picture = "\A3\Data_F_Kart\Logos\arma3_karts_logo_ca.paa";
+        pictureColor[] = { 1, 1, 1, 1 };
+    };
+};
+
+class CfgFunctions {
+    #include "dna\race\cfgFunctions.hpp"
+};
+
+class CfgSounds {
+    #include "dna\race\cfgSounds.hpp"
+};
+
+class CfgMusic {
+    #include "dna\race\cfgMusic.hpp"
+};
