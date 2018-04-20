@@ -2,7 +2,7 @@
 class Header {
     gameType = Sandbox;
     minPlayers = 1;
-    maxPlayers = 14;
+    maxPlayers = 16;
 };
 
 class Mission {
@@ -26,6 +26,18 @@ class CfgDebriefing
         pictureColor[] = { 1, 1, 1, 1 };
     };
 };
+
+class Params
+{
+    class SNX_RACE_LAPS
+    {
+        title = "# of Laps";
+        values[] = {1,2,3};
+        texts[] = {"1", "2", "3"};
+        default = 1;
+    };
+};
+
 
 class CfgFunctions {
     #include "dna\race\cfgFunctions.hpp"
